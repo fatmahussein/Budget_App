@@ -33,7 +33,7 @@
 
 [Live Demo](https://budget-app-ur31.onrender.com)
 
-[Loom video] ()
+[Loom video] (https://www.loom.com/share/e924263c3218411c92dc3c89e275fbb1?sid=5630cc3f-2159-4f94-ada4-d177467d2698)
 
 ## 🛠 Built With <a name="built-with"></a>
 

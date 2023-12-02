@@ -1,7 +1,5 @@
 <a name="readme-top"></a>
 <div align="center">
-  <img src="./budget.png" alt="logo" width="140"  height="auto" />
-  <br/>
 
   <h3><b>Budget on Rails</b></h3>
 

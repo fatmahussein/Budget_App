@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Transaction</h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @entry.name %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  $ <%= @entry.amount %>
+</p>
+
+<p>
+  <strong>Categories:</strong>
+  <% @entry.categories.each do |category| %>
+    <%= link_to category.name, category_path(category) %>
+  <% end %>
+</p>
+
+<div>
+  <%= link_to "Edit this entry", edit_entry_path(@entry), class: 'btn btn-link' %> |
+  <%= link_to "Back to entries", entries_path, class: 'btn btn-link' %>
+  <%= button_to "Destroy this entry", @entry, method: :delete, class: 'btn btn-danger' %>
+</div>

@@ -1,0 +1,10 @@
+<h1>Editing transaction</h1>
+
+<%= render "form", entry: @entry, categories: @categories %>
+
+<br>
+
+<div>
+  <%= link_to "Show this transaction", @entry , class: "btn btn-link" %>
+  <%= link_to "Back to transactions", entries_path , class: "btn btn-link" %>
+</div>

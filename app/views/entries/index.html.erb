@@ -1,0 +1,41 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="text-center">Transactions</h1>
+
+<% if @total_amount %>
+  <p class="text-end">
+    <strong >Total spent:</strong>
+    $ <%= @total_amount %>
+  </p>
+<% end %>
+
+<% if @entries.empty? %>
+  <p>No transactions yet</p>
+<% else%>
+  <table id="entries" class="table table-hover">
+      <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Categories</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @entries.each do |entry| %>
+      <tr id="<%= dom_id entry %>">
+        <%= render partial: 'entry', locals: { entry: entry } %>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+<% end %>
+
+<% if params[:category_id].present? %>
+<div style="background-color: #157347; padding: 5px;">
+  <%= link_to "Add a new transaction entry", new_category_entry_path(params[:category_id]),style: 'border: 2px solid #fff; color: #fff; font-weight: bold; width: 100%; box-sizing: border-box; padding: 5px; border-radius: 5px;',  class:'d-flex flex-column align-items-center btn-outline-secondary' %>
+</div>
+<% else %>
+<div style="background-color: #157347; padding: 10px;">
+  <%= link_to "Add a new transaction entry",new_entry_path, style: 'border: 2px solid #fff; color: #fff; font-weight: bold; width: 100%; box-sizing: border-box; padding: 5px', class:'d-flex flex-column align-items-center btn-outline-secondary' %>
+</div>
+<% end %>

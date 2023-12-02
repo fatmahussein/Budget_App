@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Categories</h1>
+
+<div id="categories" >
+  <% if @categories.empty? %>
+    <p>No categories yet</p>
+  <% else %>
+    <% @categories.each do |category| %>
+      <div class='border rounded bg-white p-4 mb-4'>
+        <% if @entries_available %>
+          <%= render 'category', category: category, entries: category.entries %>
+        <% else %>
+          <%= render 'category', category: category, entries: [] %>
+        <% end %>
+        <div class='category-actions'>
+          <%= link_to "Show this category", category_path(category) %> |
+          <%= link_to "Show all transactions", category_entries_path(category) %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+<div style="background-color: #157347; padding: 10px;">
+  <%= link_to "Add a New Category", new_category_path, style: 'border: 2px solid #fff; color: #fff; font-weight: bold; width: 100%; box-sizing: border-box;', class: 'd-flex flex-column align-items-center btn btn-outline-secondary' %>
+</div>

@@ -50,7 +50,7 @@
 - Users can sign up and log in
 - Users can create categories
 - Users can create transactions
-- Users can see, edit and delete their transactions and categories
+- Users can see, edit, and delete their transactions and categories
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -60,7 +60,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+To run this project you need:
 
 - Install [Ruby](https://www.ruby-lang.org/en/)
 - Install [Ruby on Rails](https://rubyonrails.org/)
@@ -78,10 +78,10 @@ Install the required gems
 `bundle install`
 
 Precompile bootstrap and app assets
-`rails assets:precompile`
+`rails assets: precompile`
 
 Create the database by running the command
-`rails db:create`
+`rails db: create`
 
 ### Run tests
 
@@ -109,9 +109,9 @@ And now you should be able to see the project running on `localhost:3000`
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Create clasification for expenses and income
+- Create classification for expenses and income
 - Create a dashboard with charts
-- Create a budget for each clasification
+- Create a budget for each classification
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

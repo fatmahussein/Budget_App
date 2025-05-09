@@ -29,7 +29,7 @@
 
 **Budget** This represents a budgeting application constructed using Rails, serving as the capstone project within the Rails module as a component of the Fullstack program at Microverse.org. 
 
-[Live Demo](https://budget-app-ur31.onrender.com)
+[Live Demo](https://budget-app-8sx3.onrender.com)
 
 [Loom video] (https://www.loom.com/share/e924263c3218411c92dc3c89e275fbb1?sid=5630cc3f-2159-4f94-ada4-d177467d2698)
 
